@@ -1,11 +1,11 @@
 // store the hyperlink for signup and profile page
-const signUpPageEl = document.getElementById('signup');
+const signUpPageEl = document.getElementById('signUp');
 const profilePageEl = document.getElementById('profile');
 
 // store the profile details elements
-const nameEl = document.getElementById('name');
+const nameEl = document.getElementById('fName');
 const emailEl = document.getElementById('email');
-const passwordEl = document.getElementById('password');
+const passwordEl = document.getElementById('pPassword');
 const userDetails = document.getElementById('user_deatails');
 //------------------------------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ function logOut() {
   window.localStorage.removeItem('state');
   userDetails.classList.add('hidden');
   // redirect to signup page
-  window.location.href = 'index.html';
+  window.location.href = './index.html';
 }
 
 // 02. display user details

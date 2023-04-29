@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #252422;
+  color: white;
+}
+
+#flexbox {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+  justify-content: flex-end;
+  background-color: black;
+  list-style : none;
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(148, 101, 83)
+}
+
+nav{
+  border-bottom: 2px solid white;
+}
+
+.flex-left {
+  margin-right: auto;
+  padding: 0.3rem;
+}
+
+.flex-end {
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+#form {
+  width: 75rem;
+  height: 40rem;
+  padding: 0.5rem;
+  margin: 100px 30px auto;
+  background-color: black;
+  
+}
+
+h2 {
+  display: block;
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.labels {
+  padding: 1px;
+}
+
+.left {
+  display: block;
+  width: 100%;
+  margin: 2px 0;
+  padding: 0.2rem 0;
+  border: none;
+  background-color: #252422;
+  color: white;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+hr {
+  width: 100%;
+  background-color: white;
+  margin-top: -1rem;
+}
+
+#submit-btn {
+  display: block;
+  width: 10rem;
+  font-size: 1.5rem;
+  padding: 0.3rem 0rem;
+  margin-top: 5rem;
+  margin-left: 0.2rem;
+}
+
+/*Alert (Error, Success) messages with hidden class*/
+.hidden {
+  display: none;
+}
+.alert {
+  margin: 2rem;
+  font-size: 1.5rem;
+  margin: 0px 30px 0px 30px;
+}

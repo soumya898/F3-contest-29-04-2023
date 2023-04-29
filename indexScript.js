@@ -28,19 +28,19 @@ C. When user clicks on signup button or profile button in nav bar
 //------------------------------------------------------------------------------------------------
 
 // store the hyperlink for signup and profile page
-const signUpPageEl = document.getElementById('signup');
+const signUpPageEl = document.getElementById('signUp');
 const profilePageEl = document.getElementById('profile');
 
 // Storing all form input elements
 const nameEl = document.getElementById('name');
 const emailEl = document.getElementById('email');
 const passwordEl = document.getElementById('password');
-const cnfPasswordEl = document.getElementById('confirmpassword');
+const cnfPasswordEl = document.getElementById('confirmPassword');
 const successEl = document.getElementById('success');
 const errorEl = document.getElementById('error');
 const passwordMismatchedEl = document.getElementById('passwordMismatched');
 const invalidemailEl = document.getElementById('invalidEmail');
-const submitBtn = document.getElementById('btn');
+const submitBtn = document.getElementById('submit-btn');
 
 //------------------------------------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ let usersArray = [];  // this array will store the userObj and this array then w
 
 //If local storage contails accessToken (user leaves browser without logging out) user should redirect to profile page directly
 if (window.localStorage.getItem('accessToken')) {
-  window.location.href = 'profile.html';
+  window.location.href = './profile.html';
 }
 
 //------------------------------------------------------------------------------------------------
@@ -137,6 +137,6 @@ function setLocalStorageRedirectToProfile(name, email, password) {
   setItemInLocalStorage(usersArray, accessToken)  // function no 02
   // set input deatails array as empty
   // redirect user to the profile page
-  window.location.href = 'profile.html';
+  window.location.href = './profile.html';
 }
 

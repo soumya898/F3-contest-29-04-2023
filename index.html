@@ -2,79 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="weekend test">
-    <link rel="stylesheet" href="Style.css">
-    <title>Signup-page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Signup Page</title>
+
+  <link rel="stylesheet" href="indexStyle.css">
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <li id="flex-start">Header</li>
-            <li class="flex-end" id="signup"> <a href="#">SignUp</a></li>
-            <li class="flex-end" id="profile"><a href="#">Profile</a> </li>
+  <nav>
+    <ul id="flexbox">
+      <li class="flex-left">Header</li>
+      <li class="flex-right">
+        <a href="#" id="signUp">Signup </a>
+      </li>
+      <li class="flex-right">
+        <a href="#" id="profile">Profile </a>
+      </li>
+    </ul>
+  </nav>
 
-        </nav>
-        <h1>Signup</h1>
-    </header>
+  <div id="form">
 
-    <main>
-        <div class="FORM">
-            <!-- <form action="mailto:soumyaranjannayak0140@gmail.com" id="form01"> -->
-            <form action="#" id="form01">
-                <label for="Full Name">Full Name</label>
-                <input type="text" name="Full Name" class="WIDTH" id="name" required>
-                <br>
-                <hr>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="WIDTH" required>
-                <br>
-                <hr>
-                <label for="password">Password</label>
-                <input type="password" name="password" class="WIDTH" id="password" required>
-                <br>
-                <hr>
-                <label for="confirm password">Confirm Password</label>
-                <input type="password" name="confirm password" id="confirmpassword" class="WIDTH" required>
-                <br>
+    <h2>Signup</h2>
+    <label for="name" class="labels">
+      <input type="text" id="name" class="left" placeholder="Full Name" required>
+    </label>
+    <hr class="bottom-border">
+    <label for="email" class="labels">
+      <input type="email" id="email" class="left" placeholder="Email" required>
+    </label>
+    <hr class="bottom-border">
+    <label for="password" class="labels">
+      <input type="password" id="password" class="left" placeholder="Password" required>
+    </label>
+    <hr class="bottom-border">
+    <label for="confirmPassword" class="labels">
+      <input type="password" id="confirmPassword" class="left" placeholder="Confirm Password" required>
+    </label>
+    <hr class="bottom-border">
+    <button type="submit" id="submit-btn">Signup</button>
 
-                <br>
-                <button class="btn" type="submit" form="form01" id="btn"value="Signup">Signup</button>
-
-            </form>
-
-
-            <div class="alertMessage">
-
-
-                <div class="hidden" id="success" style="color: green;">
-                    Successfully Signed Up
-                </div>
-
-                <div class="hidden" id="error" style="color: red;">
-                    Error: All fields are mandatory
-                </div>
-
-                <div class="hidden" id="passwordMismatched" style="color: red;">
-                    Error: Password Missmatched  Enter correct password
-                </div>
-
-                <div class="hidden" id="invalidEmail" style="color: red;">
-                    Error: Invalid email Enter correct Email
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-
+    <!-- Error/Success Elements -->
+    <div class="alert">
+      <div class="hidden" id="success" style="color: green;">
+         Successfully Signed Up
+      </div>
+      <div class="hidden" id="error" style="color: red;">
+        Error:  All fields are mandatory 
+      </div>
+      <div class="hidden" id="passwordMismatched" style="color: red;">
+        Error:  Password not Matching. Please enter correct password 
+      </div>
+      <div class="hidden" id="invalidEmail" style="color: red;">
+        Error: Invalid email id. Please enter correct email id 
+      </div>
+    </div>
+  </div>
+  <script src="indexScript.js"></script>
 </body>
 
 </html>
