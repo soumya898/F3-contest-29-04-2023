@@ -1,7 +1,28 @@
 body {
     background-color:black;
+    margin: 0;
+    padding: 0;
 }
-
+#navbar{
+    color:white;
+    display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+  justify-content: flex-end;
+  background-color: black;
+  list-style: none;
+  border-bottom:1px solid wheat ;
+  
+}
+#flex-start {
+    margin-right: auto;
+    padding: 0.3rem;
+  }
+  
+  .flex-end {
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+  }
  form {
     width: 500px;
     color: white;
