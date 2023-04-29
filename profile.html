@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
     <title>profile Page</title>
 </head>
 
@@ -17,9 +20,9 @@
             <li class="flex-end" id="profile"><a href="#">Profile</a> </li>
 
         </nav>
-        <h1>Profile</h1>
+        <!-- <h1>Profile</h1> -->
     </header>
-    
+
     <div class="hidden" id="user_deatails">
         <p class="profile_Header" id="profile-details">Profile</p>
         <p class="profile" id="profile-name"> <i> Full Name</i> : <span id="fName"></span></p>
@@ -27,6 +30,7 @@
         <p class="profile" id="profile-password"> <i> Password</i> : <span id="pPassword"></span></p>
         <button id="logout-btn" onclick="logOut()">Logout</button>
     </div>
+    <script src="profile.js"></script>
 </body>
 
 </html>
