@@ -18,4 +18,10 @@ let Confirmpassword=document.getElementById("confirmpassword");
 
 
 
+ // add links
+
+ let SignUp=document.getElementById("signup");
+ let Profile=document.getElementById("profile");
  
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>profile Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <li id="flex-start">Header</li>
+            <li class="flex-end" id="signup"> <a href="#">SignUp</a></li>
+            <li class="flex-end" id="profile"><a href="#">Profile</a> </li>
+
+        </nav>
+        <h1>Profile</h1>
+    </header>
+    <div class="hidden" id="user_deatails">
+        <p class="profile_Header" id="profile-details">Profile</p>
+        <p class="profile" id="profile-name"> <i> Full Name</i> : <span id="fName"></span></p>
+        <p class="profile" id="profile-email"> <i> Email</i> : <span id="email"></span></p>
+        <p class="profile" id="profile-password"> <i> Password</i> : <span id="pPassword"></span></p>
+        <button id="logout-btn" onclick="logOut()">Logout</button>
+    </div>
+</body>
+
+</html>
